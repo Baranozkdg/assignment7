@@ -1,12 +1,19 @@
+import { Routes, Route } from 'react-router-dom'
 import './App.css'
 
-function App() {
+function Home() {
   return (
-    <div>
+    <div style={{ padding: '40px', textAlign: 'center' }}>
       <h1>React Shop</h1>
-      <p>coming soon</p>
+      <p>Home page placeholder</p>
     </div>
   )
 }
 
-export default App
+export default function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<Home />} />
+    </Routes>
+  )
+}
