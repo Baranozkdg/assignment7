@@ -1,19 +1,16 @@
 import { Routes, Route } from 'react-router-dom'
+import Layout from './components/Layout'
+import Home from './pages/Home'
+import ProductList from './pages/ProductList'
 import './App.css'
-
-function Home() {
-  return (
-    <div style={{ padding: '40px', textAlign: 'center' }}>
-      <h1>React Shop</h1>
-      <p>Home page placeholder</p>
-    </div>
-  )
-}
 
 export default function App() {
   return (
     <Routes>
-      <Route path="/" element={<Home />} />
+      <Route element={<Layout />}>
+        <Route index element={<Home />} />
+        <Route path="products" element={<ProductList />} />
+      </Route>
     </Routes>
   )
 }
