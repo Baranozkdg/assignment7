@@ -13,3 +13,49 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+/* light theme (default) */
+.app-wrapper {
+  min-height: 100vh;
+  background: #fff;
+  color: #1a1a1a;
+}
+
+/* dark theme */
+.app-wrapper.dark {
+  background: #1a1a2e;
+  color: #e0e0e0;
+}
+
+.app-wrapper.dark .navbar {
+  background: #16213e;
+  border-bottom-color: #2a2a4a;
+}
+
+.app-wrapper.dark .product-card {
+  background: #16213e;
+  border-color: #2a2a4a;
+}
+
+.app-wrapper.dark .filters input,
+.app-wrapper.dark .filters select {
+  background: #16213e;
+  color: #e0e0e0;
+  border-color: #2a2a4a;
+}
+
+.app-wrapper.dark .login-form input {
+  background: #16213e;
+  color: #e0e0e0;
+  border-color: #2a2a4a;
+}
+
+.app-wrapper.dark .cart-item {
+  background: #16213e;
+  border-color: #2a2a4a;
+}
+
+.app-wrapper.dark .footer {
+  background: #16213e;
+  border-top-color: #2a2a4a;
+}

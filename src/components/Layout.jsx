@@ -1,10 +1,10 @@
 import { Outlet } from 'react-router-dom'
 import NavBar from './NavBar'
 
-export default function Layout() {
+export default function Layout({ theme, toggleTheme }) {
   return (
-    <div className="app-wrapper">
-      <NavBar />
+    <div className={`app-wrapper ${theme}`}>
+      <NavBar theme={theme} toggleTheme={toggleTheme} />
       <main className="main-content">
         <Outlet />
       </main>
